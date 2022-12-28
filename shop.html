@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shop.css" />
+    <title>Document</title>
+</head>
+
+<body class="body1">
+    <main>
+        <h1>Shopping Cart List</h1>
+        <table>
+            <thead>
+                <tr class="rowhead">
+                    <th class="prod" >Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- parent fih fils td+th-->
+                    <td class="prod1" >Product 1</td>
+                    <td class="unitprice">100</td>
+                    <td class="qt">2</td>
+                    <td class="total">200</td>
+                    <th> <!-- th pour le gras -->
+                        <div onclick="dern(event)" class="heart" >heart</div>
+                        <div onclick="ajout(event)">ajout</div>
+                        <div onclick="soust(event)">soust</div>
+                        <div onclick="supr(event)">delete</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="prod1">Product 2</td>
+                    <td class="unitprice">300</td>
+                    <td class="qt">2</td>
+                    <td class="total">600</td>
+                    <th>
+                        <div onclick="dern(event)"class="heart">heart</div>
+                        <div onclick="ajout(event)">ajout</div>
+                        <div onclick="soust(event)">soust</div>
+                        <div onclick="supr(event)">delete</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="prod1" >Product 3</td>
+                    <td class="unitprice">50</td>
+                    <td class="qt">1</td>
+                    <td class="total">200</td>
+                    <th>
+                        <div onclick="dern(event)" class="heart">heart</div>
+                        <div onclick="ajout(event)">ajout</div>
+                        <div onclick="soust(event)">soust</div>
+                        <div onclick="supr(event)">delete</div>
+                    </th>
+                </tr>
+                <tr class="cartTotal">
+                    <td>Total: <span>1000</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="ess.js"></script>
+    </body>
+
+</html>
